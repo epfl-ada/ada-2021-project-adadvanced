@@ -1,0 +1,14 @@
+rf/.ipynb_checkpoints/**
+jn/.ipynb_checkpoints/**
+ga/.ipynb_checkpoints/**
+
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Data files
+*.json
+*.bz2
