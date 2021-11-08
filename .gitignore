@@ -12,3 +12,4 @@ ipython_config.py
 # Data files
 *.json
 *.bz2
+*.parquet
