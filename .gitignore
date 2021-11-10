@@ -9,7 +9,12 @@ ga/.ipynb_checkpoints/**
 profile_default/
 ipython_config.py
 
+# Data folders
+Brexit_datas/**
+Data/**
+
 # Data files
 *.json
 *.bz2
+*.csv
 *.parquet
