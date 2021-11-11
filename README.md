@@ -19,7 +19,7 @@ Supporting Questions:
 - Did the UK's view on Brexit switch much from 2015 until its exit in 2020? When did the turnarounds of perception happen?
 
 ## Proposed additional datasets 
-Wikidata
+Wikidata (to be completed)
 
 ## Methods
 1. Data preprocessing: 
