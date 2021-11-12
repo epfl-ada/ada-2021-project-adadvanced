@@ -45,7 +45,7 @@ Before diving into the analysis of the data, it is crucial to have a look at the
    - One hot-encoding of attributes
  - Quotations and speakers clustering : Clustering the quotations and the speakers
    - Converting quotations into vectors using [SentenceTransformer](https://www.sbert.net/docs/usage/semantic_textual_similarity.html) deep neural network.
-   - Reducing the dimension of the data frame using [T-stochastic neighbors embeddings](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html)
+   - Reducing the dimension of the data frame using [Locally Linear Embeddings](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.LocallyLinearEmbedding.html#sklearn.manifold.LocallyLinearEmbedding)
    - Perform aggregation to attribute a vector to each speaker.
    - Performing clustering using [Spectral Clustering](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.SpectralClustering.html#sklearn.cluster.SpectralClustering) method.
 
@@ -71,12 +71,12 @@ For Milestone 3:
 ## Organization within the Team
 - Milestone 2:
     - Arnaud: Data exploration and Sanity check, Data extraction, Data cleaning, Quotations and speakers   clustering, Initial results.
-    - Rafaelle: Data exploration and Sanity check, Quotations and speakers clustering, 
+    - Raffaele: Data exploration and Sanity check, Quotations and speakers clustering, 
     - Jean: Data exploration and Sanity check, Data augmentation, Quotations and speakers clustering, 
     - Gaelle: Data exploration and Sanity check, Data augmentation, Data merging and cleaning, writing the readme file.
     
 - Milestone 3 (Tentative):
     - Arnaud & Gaelle: Visualisation of the results.
-    - Rafaelle & Jean: Analysis of the results and writing the final story.
+    - Raffaele & Jean: Analysis of the results and writing the final story.
 
  
