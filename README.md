@@ -46,7 +46,8 @@ Before diving into the analysis of the data, it is crucial to have a look at the
    - One hot-encoding of attributes
  - Quotations and speakers clustering :
    - Converting quotations into vectors using [SentenceTransformer](https://www.sbert.net/docs/usage/semantic_textual_similarity.html) deep neural network.
-   - Reducing the dimension of the data frame using [Locally Linear Embeddings](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.LocallyLinearEmbedding.html#sklearn.manifold.LocallyLinearEmbedding)
+   - Reducing the dimension of the data frame using [Locally Linear Embeddings](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.LocallyLinearEmbedding.html#sklearn.manifold.LocallyLinearEmbedding). This algorithm aims at preserving the neighbouring points. First, for each point, its nearest neighbors are determined. Then it tries to project the new point in the embedded space such that its neighbors are preserved
+This spectral dimensionality reduction technique is non-linear, fast and reliable enough to handle big and complex dataset.
    - Perform aggregation to attribute a vector to each speaker.
    - Performing clustering using [Spectral Clustering](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.SpectralClustering.html#sklearn.cluster.SpectralClustering) method.
 
