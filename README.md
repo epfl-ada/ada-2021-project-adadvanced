@@ -4,10 +4,12 @@
 In the last few years, Brexit has been one of the most trending topics in the world. Between 2015 and Britain's official EU exit in February 2020, countless discussions and debates have been generated around the subject. People coming from different backgrounds had a take on the matter, where views and opinions diversified and contrasted. Opponents speculated that the influence of Brexit would have negative impacts on certain sectors while supporters claimed the opposite. The aim of the study is to analyze the evolution of the perception of Brexit throughout the years (2015 - 2020). It would be interesting to look at this perception by aggregating the views by sector as well as by country, age, gender, ethnicity and educational level of the speakers. 
 
 ## Research Questions
-The project aims at answering the following questions: <br/>
+The project aims at answering the following questions: 
+<br/>
 Main Question:
 <br/>
-**How did the perception of Brexit evolved over time?** 
+**How did the perception of Brexit evolve over time?** 
+<br/>
 <br/>
 Supporting Questions:
 <br/>
