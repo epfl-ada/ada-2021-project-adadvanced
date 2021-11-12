@@ -65,6 +65,7 @@ By the end of Milestone 2:
 - Initial results/plots have been generated.
 
 For Milestone 3:
+- Finish tasks such that the correlation study with stock actions and enrich the existing ones
 - Focus on proper visualizazion of the results in order to make conjectures that answer our research questions. 
 - Deep and elaborate analysis of the results to write the final story. 
 - Set up the platform.
