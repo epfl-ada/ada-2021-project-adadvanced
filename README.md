@@ -1,25 +1,29 @@
 # A Short Story of the Long Road to Brexit
 
 ## Abstract
-In the last few years, Brexit has been one of the most trending topics in the world. Between 2015 and Britain's official EU exit in February 2020, countless discussions and debates have been generated around the subject. People coming from different backgrounds had a take on the matter, where views and opinions diversified and contrasted. Opponents speculated that the influence of Brexit would have negative impacts on certain sectors while supporters claimed the opposite. The aim of the study is to analyze the evolution of the perception of Brexit throughout the years (2015 - 2020). It would be interesting to look at this perception by aggregating the views by sector as well as by counrty, age, gender, ethnicity and educational level of the speakers. 
+In the last few years, Brexit has been one of the most trending topics in the world. Between 2015 and Britain's official EU exit in February 2020, countless discussions and debates have been generated around the subject. People coming from different backgrounds had a take on the matter, where views and opinions diversified and contrasted. Opponents speculated that the influence of Brexit would have negative impacts on certain sectors while supporters claimed the opposite. The aim of the study is to analyze the evolution of the perception of Brexit throughout the years (2015 - 2020). It would be interesting to look at this perception by aggregating the views by sector as well as by country, age, gender, ethnicity and educational level of the speakers. 
 
 ## Research Questions
-The project aims at answering the following questions:
-Main Question: 
-- How did the perception of Brexit evolved over time?
+The project aims at answering the following questions: 
+<br/>
+<br/>
+Main Question:
+<br/>
+**How did the perception of Brexit evolve over time?** 
+<br/>
+<br/>
 Supporting Questions:
+<br/>
 - Which sectors had the most negative take on Brexit?
 - Which sectors had a significant change in perception (from negative to positive or vise versa) throughout the years?
 - Is it true that older people were more in favor of Brexit than younger people?
-- Which countries were the most supportive of the exit decisions and which ones opposed it?
-- What was the perception of European countries with regards to Brexit?
+- Which countries were the most supportive of the exit decision and which ones opposed it? What was the perception of European countries with regards to Brexit?
 - Which ethnicities were the most supportive of the exit decisions and which ones opposed it?
-- Do genders have different perception of Brexit?
-- Is the global take on Brexit rather positive or negative?
+- Does gender have an impact on the perception of Brexit?
 - Did the UK's view on Brexit switch much from 2015 until its exit in 2020? When did the turnarounds of perception happen?
 
 ## Proposed additional datasets 
-Wikidata (to be completed)
+To enrich the quotebank data, we used additional information about the speakers that was provided by the `speaker_attributes.parquet` file. The source of the information is Wikidata. To complement the Quotebank data set, a sentiment analysis has been performed so to label the sentiment carried by the quote. 
 
 ## Methods
 1. Data preprocessing: 
@@ -29,9 +33,12 @@ Before diving into the analysis of the data, it is crucial to have a look at the
  - Data Augmentation : Attributes related to the speaker & sentiment labelling of the quote (positive/neutral/negative):
      - Attributes of interest are extracted from Wikidata knowledge base using the speaker_attributes.parquet file
      - Mapping QIDs to meaningful labels
-     - Labelling was performed using [NLTK's Vader Neural network](https://www.nltk.org/_modules/nltk/sentiment/vader.html) 
+     - Sentiment labelling was performed using [NLTK's Vader Neural network](https://www.nltk.org/_modules/nltk/sentiment/vader.html) 
  - Final Cleaning of the data & Merging:
-   - Eliminating duplicated quotations using Sentence BERT
+   - Eliminating very similar quotations using Sentence BERT 
+       - Converting quotations into vectors using [SentenceTransformer](https://www.sbert.net/docs/usage/semantic_textual_similarity.html) deep neural network.
+       - Computing [Cosine Similarity](https://en.wikipedia.org/wiki/Cosine_similarity) between each pair of quotations
+       - Removing quotations that are too similar from the dataset
    - Removing quotations that do not have pertinent references
    - Aggregation of the data based on sectors, countries, gender and age categories
    - Merging similar speakers
@@ -44,7 +51,7 @@ Before diving into the analysis of the data, it is crucial to have a look at the
 
 2. Data Analysis:
 - Generate Results: statistics and general description of the data
-- Data Visualization using maps, histograms, scatter plots, interactive time map and plots, 
+- Data Visualization using maps, histograms, scatter plots, interactive time map and plots.
 
 ## Timeline
 By the end of Milestone 2:
@@ -63,13 +70,13 @@ For Milestone 3:
 
 ## Organization within the Team
 - Milestone 2:
-  Arnaud: Data exploration and Sanity check, Data extraction, Data cleaning, Quotations and speakers   clustering, Initial results. 
-  Rafaelle: Data exploration and Sanity check, Quotations and speakers clustering, 
-  Jean: Data exploration and Sanity check, Data augmentation, Quotations and speakers clustering, 
-  Gaelle: Data exploration and Sanity check, Data augmentation, Data merging and cleaning, writing the     readme file.
-
+    - Arnaud: Data exploration and Sanity check, Data extraction, Data cleaning, Quotations and speakers   clustering, Initial results.
+    - Rafaelle: Data exploration and Sanity check, Quotations and speakers clustering, 
+    - Jean: Data exploration and Sanity check, Data augmentation, Quotations and speakers clustering, 
+    - Gaelle: Data exploration and Sanity check, Data augmentation, Data merging and cleaning, writing the readme file.
+    
 - Milestone 3 (Tentative):
-  Arnaud & Rafaelle: Visualisation of the results.
-  Gaelle & Jean: Analysis of the results and writing the final story.
+    - Arnaud & Gaelle: Visualisation of the results.
+    - Rafaelle & Jean: Analysis of the results and writing the final story.
 
  
