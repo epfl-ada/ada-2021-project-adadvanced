@@ -44,7 +44,7 @@ Before diving into the analysis of the data, it is crucial to have a look at the
    - Aggregation of the data based on sectors, countries, gender and age categories
    - Merging similar speakers
    - One hot-encoding of attributes
- - Quotations and speakers clustering : Clustering the quotations and the speakers
+ - Quotations and speakers clustering :
    - Converting quotations into vectors using [SentenceTransformer](https://www.sbert.net/docs/usage/semantic_textual_similarity.html) deep neural network.
    - Reducing the dimension of the data frame using [Locally Linear Embeddings](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.LocallyLinearEmbedding.html#sklearn.manifold.LocallyLinearEmbedding)
    - Perform aggregation to attribute a vector to each speaker.
