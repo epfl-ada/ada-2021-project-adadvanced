@@ -5,9 +5,11 @@ In the last few years, Brexit has been one of the most trending topics in the wo
 
 ## Research Questions
 The project aims at answering the following questions: <br/>
-<u>Main Question:</u>
+Main Question:
+<br/>
 **How did the perception of Brexit evolved over time?** 
-<u>Supporting Questions:</u>
+<br/>
+Supporting Questions:
 <br/>
 - Which sectors had the most negative take on Brexit?
 - Which sectors had a significant change in perception (from negative to positive or vise versa) throughout the years?
