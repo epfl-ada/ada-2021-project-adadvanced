@@ -6,6 +6,7 @@ In the last few years, Brexit has been one of the most trending topics in the wo
 ## Research Questions
 The project aims at answering the following questions: 
 <br/>
+<br/>
 Main Question:
 <br/>
 **How did the perception of Brexit evolve over time?** 
