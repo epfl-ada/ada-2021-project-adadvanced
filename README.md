@@ -5,10 +5,10 @@ In the last few years, Brexit has been one of the most trending topics in the wo
 
 ## Research Questions
 The project aims at answering the following questions: <br/>
-Main Question: 
-- How did the perception of Brexit evolved over time? 
+<u>Main Question:</u>
+**How did the perception of Brexit evolved over time?** 
+<u>Supporting Questions:</u>
 <br/>
-Supporting Questions:
 - Which sectors had the most negative take on Brexit?
 - Which sectors had a significant change in perception (from negative to positive or vise versa) throughout the years?
 - Is it true that older people were more in favor of Brexit than younger people?
@@ -65,13 +65,13 @@ For Milestone 3:
 
 ## Organization within the Team
 - Milestone 2:
-      - Arnaud: Data exploration and Sanity check, Data extraction, Data cleaning, Quotations and speakers   clustering, Initial results. 
-      - Rafaelle: Data exploration and Sanity check, Quotations and speakers clustering, 
-      - Jean: Data exploration and Sanity check, Data augmentation, Quotations and speakers clustering, 
-      - Gaelle: Data exploration and Sanity check, Data augmentation, Data merging and cleaning, writing the readme file.
-
+    - Arnaud: Data exploration and Sanity check, Data extraction, Data cleaning, Quotations and speakers   clustering, Initial results.
+    - Rafaelle: Data exploration and Sanity check, Quotations and speakers clustering, 
+    - Jean: Data exploration and Sanity check, Data augmentation, Quotations and speakers clustering, 
+    - Gaelle: Data exploration and Sanity check, Data augmentation, Data merging and cleaning, writing the readme file.
+    
 - Milestone 3 (Tentative):
-      - Arnaud & Gaelle: Visualisation of the results.
-      - Rafaelle & Jean: Analysis of the results and writing the final story.
+    - Arnaud & Gaelle: Visualisation of the results.
+    - Rafaelle & Jean: Analysis of the results and writing the final story.
 
  
