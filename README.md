@@ -21,9 +21,10 @@ Supporting Questions:
 - Which ethnicities were the most supportive of the exit decisions and which ones opposed it?
 - Does gender have an impact on the perception of Brexit?
 - Did the UK's view on Brexit switch much from 2015 until its exit in 2020? When did the turnarounds of perception happen?
+- Did Brexit discussions influence the british stock market? 
 
 ## Proposed additional datasets 
-To enrich the quotebank data, we used additional information about the speakers that was provided by the `speaker_attributes.parquet` file. The source of the information is Wikidata. To complement the Quotebank data set, a sentiment analysis has been performed so to label the sentiment carried by the quote. 
+To enrich the quotebank data, we used additional information about the speakers that was provided by the `speaker_attributes.parquet` file. The source of the information is Wikidata. To complement the Quotebank data set, a sentiment analysis has been performed so to label the sentiment carried by the quote. Another dataset of interest is the FTSE100. This data set is accessible using the package [YFinance](https://pypi.org/project/yfinance/) and it gives the daily evolution of the stock actions throughout the years. 
 
 ## Methods
 1. Data preprocessing: 
