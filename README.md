@@ -21,9 +21,10 @@ Supporting Questions:
 - Which ethnicities were the most supportive of the exit decisions and which ones opposed it?
 - Does gender have an impact on the perception of Brexit?
 - Did the UK's view on Brexit switch much from 2015 until its exit in 2020? When did the turnarounds of perception happen?
+- Did Brexit discussions influence the british stock market? 
 
 ## Proposed additional datasets 
-To enrich the quotebank data, we used additional information about the speakers that was provided by the `speaker_attributes.parquet` file. The source of the information is Wikidata. To complement the Quotebank data set, a sentiment analysis has been performed so to label the sentiment carried by the quote. 
+To enrich the quotebank data, we used additional information about the speakers that was provided by the `speaker_attributes.parquet` file. The source of the information is Wikidata. To complement the Quotebank data set, a sentiment analysis has been performed so to label the sentiment carried by the quote. Another dataset of interest is the FTSE100. This data set is accessible using the package [YFinance](https://pypi.org/project/yfinance/) and it gives the daily evolution of the stock actions throughout the years. 
 
 ## Methods
 1. Data preprocessing: 
@@ -43,9 +44,10 @@ Before diving into the analysis of the data, it is crucial to have a look at the
    - Aggregation of the data based on sectors, countries, gender and age categories
    - Merging similar speakers
    - One hot-encoding of attributes
- - Quotations and speakers clustering : Clustering the quotations and the speakers
+ - Quotations and speakers clustering :
    - Converting quotations into vectors using [SentenceTransformer](https://www.sbert.net/docs/usage/semantic_textual_similarity.html) deep neural network.
-   - Reducing the dimension of the data frame using [Locally Linear Embeddings](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.LocallyLinearEmbedding.html#sklearn.manifold.LocallyLinearEmbedding)
+   - Reducing the dimension of the data frame using [Locally Linear Embeddings](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.LocallyLinearEmbedding.html#sklearn.manifold.LocallyLinearEmbedding). This algorithm aims at preserving the neighbouring points. First, for each point, its nearest neighbors are determined. Then it tries to project the new point in the embedded space such that its neighbors are preserved
+This spectral dimensionality reduction technique is non-linear, fast and reliable enough to handle big and complex dataset.
    - Perform aggregation to attribute a vector to each speaker.
    - Performing clustering using [Spectral Clustering](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.SpectralClustering.html#sklearn.cluster.SpectralClustering) method.
 
@@ -63,6 +65,7 @@ By the end of Milestone 2:
 - Initial results/plots have been generated.
 
 For Milestone 3:
+- Finish tasks such that the correlation study with stock actions and enrich the existing ones
 - Focus on proper visualizazion of the results in order to make conjectures that answer our research questions. 
 - Deep and elaborate analysis of the results to write the final story. 
 - Set up the platform.
