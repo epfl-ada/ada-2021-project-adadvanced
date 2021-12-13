@@ -19,3 +19,4 @@ Data/**
 *.csv
 *.parquet
 *.geojson
+*.gz
