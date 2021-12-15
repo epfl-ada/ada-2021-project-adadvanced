@@ -20,3 +20,4 @@ Data/**
 *.parquet
 *.geojson
 *.gz
+*.html
