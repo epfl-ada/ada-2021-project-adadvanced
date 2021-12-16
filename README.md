@@ -43,13 +43,15 @@ Before diving into the analysis of the data, it is crucial to have a look at the
    - Removing quotations that do not have pertinent references
    - Aggregation of the data based on sectors, countries, gender and age categories
    - Merging similar speakers
+   - Identify time periods distributed on an almost uniform number of quotations
    - One hot-encoding of attributes
  - Quotations and speakers clustering :
-   - Converting quotations into vectors using [SentenceTransformer](https://www.sbert.net/docs/usage/semantic_textual_similarity.html) deep neural network.
+   - Converting quotations into vectors using [SentenceTransformer](https://www.sbert.net/docs/usage/semantic_textual_similarity.html) deep neural network, encoding with the [multi-qa-mpnet-base-dot-v1](https://huggingface.co/sentence-transformers/multi-qa-mpnet-base-dot-v1) algorithm.
    - Reducing the dimension of the data frame using [Locally Linear Embeddings](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.LocallyLinearEmbedding.html#sklearn.manifold.LocallyLinearEmbedding). This algorithm aims at preserving the neighbouring points. First, for each point, its nearest neighbors are determined. Then it tries to project the new point in the embedded space such that its neighbors are preserved
 This spectral dimensionality reduction technique is non-linear, fast and reliable enough to handle big and complex dataset.
    - Perform aggregation to attribute a vector to each speaker.
    - Performing clustering using [Spectral Clustering](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.SpectralClustering.html#sklearn.cluster.SpectralClustering) method.
+   - Compare with the sentiment score.
 
 2. Data Analysis:
 - Generate Results: statistics and general description of the data
