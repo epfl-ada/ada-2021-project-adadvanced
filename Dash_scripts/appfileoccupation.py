@@ -45,8 +45,6 @@ options = [{"label": occup, "value": occup,
 
 # Define the layout of the application
 app.layout = html.Div([
-        html.Div([dcc.Graph(id="heat-map",responsive=True,style={'height': '90vh'})],
-                  style = {"width":"60%","margin-left":"20%","margin-right":"20%","margin-top":30}),
         html.Div([html.P("Year",style={"display": "flex",
                                 "font-family":"Helvetica",
                                 "font-size": 18,
@@ -67,7 +65,7 @@ app.layout = html.Div([
 
 
 # function that will update pies and drop down values 
-@app.callback([Output("pie-chart", "figure"),Output("heat-map", "figure")],
+@app.callback(Output("pie-chart", "figure"),
               [Input("range-slider","value"),Input("drop-down","value")])
 def update_pies(slider_range,values_selected):
     # get the year range wanted 
@@ -112,23 +110,7 @@ def update_pies(slider_range,values_selected):
                         "y":1.2,
                         "xanchor":"center",
                         "x":0.5})
-    # Heat map figure now for p-values 
-    fig_heat_sheet = px.imshow(P_val_df,range_color=[0,1],labels=dict(color="p-value"))
-    fig_heat = go.Figure()
-    for trace in fig_heat_sheet["data"]:
-        fig_heat.add_trace(trace)
-    fig_heat.update_layout(title = {'text': "Result of the Welch's t-test (p-values)",
-                            'y':0.95,
-                            'x':0.5,
-                            'xanchor': 'center',
-                            'yanchor': 'top',"font":{"family":"Helvetica","size":20}},
-                            legend={"font":{"family":"Helvetica","size":10},
-                            "orientation":"h",
-                            "yanchor":"top",
-                            "y":1.2,
-                            "xanchor":"center",
-                            "x":0.5})
-    return fig, fig_heat
+    return fig
 
 if __name__ == '__main__':
     app.run_server()
