@@ -52,6 +52,7 @@ Before diving into the analysis of the data, it is crucial to have a look at the
 This spectral dimensionality reduction technique is non-linear, fast and reliable enough to handle big and complex dataset.
    - Perform aggregation to attribute a vector to each speaker.
    - Performing clustering using [Spectral Clustering](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.SpectralClustering.html#sklearn.cluster.SpectralClustering) method.
+   - Validate the temporal coherence, hence the decision boundaries should comprehend almost the same speakers along time.
    - Compare with the sentiment score.
 
 2. Data Analysis:
@@ -67,7 +68,7 @@ Except for the analysis of the european country, we assessed the differences bet
 
 Dynamic graph were deployed via the [Heroku](https://www.heroku.com/home) platform.
 - Influence of Brexit on the stock exchange: to measure the correlation between the emergence of new events related to Brexit and movements in the stock exchange, the absolute value of the derivate was computed, in addition to the derivate of the number of quotations, both with respect to time. The derivatives are then used to compute the Pearson's correlation coefficient. For further information please check the stock market section in the Jupyter notebook.
-- Clustering 
+- Clustering: in order to find further correlations among the speakers, a discrete classification was performed basing on the speaker vectorization. A vectorized speaker is composed by the one-hot vectorization of its basic properties corresponding to the parameters mapped by the list `columns_to_map` (see Jupyter notebook, cell [1]) attached to the average over the vectorized quotations obtained by the *Sentence transformer* (see cell [32]). The resulting vectors were then embedded, clustered and, at last, the decision boundaries were evaluated by their temporal coherence and compared to the results obtained by the sentiment analysis. For further informations check the clustering section in the Jupyter notebook.
 
 ## Organization within the Team
 - Milestone 2:
