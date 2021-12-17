@@ -60,8 +60,9 @@ This spectral dimensionality reduction technique is non-linear, fast and reliabl
     - evolution of the way Brexit is perceived in European countries
     - evolution of the way Brexit is perceived in different sectors 
     - perception of Brexit by age 
-    - perception of Brexit by gender 
-<br/>Except for the analysis of the european country, we assessed the differences between each category pairs (for instance art and health for the sectors) by comparing the means using a Welch's t-test. 
+    - perception of Brexit by gender <br/>
+
+Except for the analysis of the european country, we assessed the differences between each category pairs (for instance art and health for the sectors) by comparing the means using a Welch's t-test. 
 
 Regarding dynamic graphs, those ones were deployed through the [Heroku](#https://www.heroku.com/home).
 - Influence of Brexit on the stock exchange: To measure the correlation between the emergence of new events related to Brexit and movements in the stock exchange, the absolute value of the derivate was computed, in addition to the derivate of the number of quotations, both with respect to time. The derivatives are then used to compute the Pearson's correlation coefficient. For further information please check the stock market section in the Jupyter notebook.
