@@ -1,23 +1,27 @@
 # A Short Story on the Long Road to Brexit
 
 ## Abstract
-In the last few years, Brexit has been one of the most trending topics in the world. Between 2015 and Britain's official EU exit in February 2020, countless discussions and debates have been generated around the subject. People coming from different backgrounds had a take on the matter, where views and opinions diversified and contrasted. Opponents speculated that the influence of Brexit would have negative impacts on certain sectors while supporters claimed the opposite. The aim of the study is to analyze the evolution of the perception of Brexit throughout the years (2015 - 2020). It would be interesting to look at this perception by aggregating the views by sector as well as by country, age, gender, ethnicity and educational level of the speakers. 
+In the last few years, Brexit has been one of the most trending topics around the world. Between 2015 and Britain's official EU exit in February 2020, countless discussions and debates have been generated around the subject. Opponents speculated that the influence of Brexit would have negative impacts on certain sectors while supporters claimed the opposite. People coming from different backgrounds had a take on the matter, where views and opinions diversified and contrasted. This made it hard to determine which side was majoritarian and had an edge on the debate and who was the losing side until the EU referdum that declared, in numbers, those in favor of Brexit as the winning side. 
+
+The problem with the referudum is that it is anonymous and therefore does not tell much about the attributes of the people who voted. On the other hand, analyzing data sets that reveal the identity of individuals such as quotations or surveys that are not anonymous, makes it possible to obtain such information. In contrast to surveys or polls, quotations span over a period of time and allow therefore to track the evolution of opinions about Brexit. In fact, the debates around Brexit did not end with the referdum: they were just yet to start.
+
+The study aims at analyzing the evolution of the perception of Brexit throughout the years (2016 - 2020) using a quantitative approach that aggregates the views about Brexit by sector, country, age, gender and profession of speakers. 
 
 ## Research Questions
-The project aims at answering the following questions: 
+
 <br/>
 <br/>
-Main Question:
+And therefore we ask ourselves::
 <br/>
-**How did the perception of Brexit evolve over time?** 
+**How did the perception of Brexit evolve over time after the referundum?** 
 <br/>
 <br/>
 Supporting Questions:
 <br/>
-- Did the UK's view on Brexit switch much from 2016 until its exit in 2020? When did the turnarounds of perception happen?
+- Did the UK's view on Brexit switch much from 2016 until its exit in 2020?
 - Which countries were the most supportive of the exit decision and which ones opposed it? What was the perception of European countries with regards to Brexit?
 - Which sectors had the most negative take on Brexit? Which sectors had a significant change in perception (from negative to positive or vise versa) throughout the years?
-- Is it true that older people were more in favor of Brexit than younger people?
+- What do the attributes of people tell about their opinions with respect to Brexit?
 - Did Brexit discussions influence the british stock market?
 
 ## Proposed additional datasets 
