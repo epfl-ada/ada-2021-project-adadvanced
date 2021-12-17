@@ -57,42 +57,28 @@ This spectral dimensionality reduction technique is non-linear, fast and reliabl
 - Generate Results: statistics and general description of the data
 - Data visualisation:
     - evolution of the way Brexit is perceived in the UK 
-    -
- + evolution of the way Brexit is perceived in European countries
- + evolution of the way Brexit is perceived in different sectors 
- + perception of Brexit by age 
- + perception of Brexit by gender 
- Pour tous les plots sauf celui des European countries, on évalue les différences entre chaque catégorie en comparant les moyennes associées à ces dernières par le biais d'un Welch t-test.  
- Concernant les plots intéractifs, ces derniers ont été déployés via la plateforme Heroku. 
- + influence of Brexit on the stock exchange
- To measure the correlation between the emergence of new events related to Brexit and movements in the stock exchange, the absolute value of the derivate was computed, in addition to the derivate of the number of quotations, both with respect to time. The derivatives are then used to compute the Pearson's correlation coefficient. For further information please check the stock market section in the Jupyter notebook.
- + clustering 
-
-## Timeline
-By the end of Milestone 2:
-- The data has been properly explored, augmented and cleaned. 
-- Additional data describing the attributes of the speakers have been processed (dealing with missing values), cleaned and one-hot encoded.
-- Sentiment analysis has been performed. 
-- Full merge of the dataset. 
-- Clustering has been performed.
-- Initial results/plots have been generated.
-
-For Milestone 3:
-- Finish tasks such that the correlation study with stock actions and enrich the existing ones
-- Focus on proper visualizazion of the results in order to make conjectures that answer our research questions. 
-- Deep and elaborate analysis of the results to write the final story. 
-- Set up the platform.
-- Propose recommendations for future work.
+    - evolution of the way Brexit is perceived in European countries
+    - evolution of the way Brexit is perceived in different sectors 
+    - perception of Brexit by age 
+    - perception of Brexit by gender 
+Except for the european country analysis, we assessed the differences between each category pairs (for instance art and health for the sectors) by comparing the means using a Welch's t-test. 
+Regarding dynamic graphs, those ones were deployed through the [Heroku](#https://www.heroku.com/home).
+- Influence of Brexit on the stock exchange: To measure the correlation between the emergence of new events related to Brexit and movements in the stock exchange, the absolute value of the derivate was computed, in addition to the derivate of the number of quotations, both with respect to time. The derivatives are then used to compute the Pearson's correlation coefficient. For further information please check the stock market section in the Jupyter notebook.
+- Clustering 
 
 ## Organization within the Team
 - Milestone 2:
-    - Arnaud: Data exploration and Sanity check, Data extraction, Data cleaning, Quotations and speakers   clustering, Initial results.
+    - Arnaud: Data exploration and Sanity check, Data extraction, Data cleaning, Quotations and speakers clustering, Initial results.
     - Raffaele: Data exploration and Sanity check, Quotations and speakers clustering, 
     - Jean: Data exploration and Sanity check, Data augmentation, Quotations and speakers clustering, 
     - Gaelle: Data exploration and Sanity check, Data augmentation, Data merging and cleaning, writing the readme file.
     
-- Milestone 3 (Tentative):
-    - Arnaud & Gaelle: Visualisation of the results.
-    - Raffaele & Jean: Analysis of the results and writing the final story.
+- Milestone 3:
+    - Arnaud: data cleaning and wrangling, generation of plotly graphs as way as dash applications, deployment of these apps on Heroku.
+    - Raffaele: data cleaning and analysis, generation of plotly graphs, speakers clustering task.
+    - Gaelle: Website tuning and deployment, data story writing, embedding graphs into the website.
+    - Jean: Website tuning and deployment, data story writing, embedding heroku applications into the website.
 
- 
+## Here is the final story ;)
+
+[Final story link](https://jeannafta.github.io/brexit_story/#Limitations)
