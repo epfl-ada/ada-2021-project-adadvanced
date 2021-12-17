@@ -8,7 +8,7 @@ The problem with the referudum is that it is anonymous and therefore does not te
 The study aims at analyzing the evolution of the perception of Brexit throughout the years (2016 - 2020) using a quantitative approach that aggregates the views about Brexit by sector, country, age, gender and profession of speakers. 
 
 ## Research Questions
-And therefore we ask ourselves::
+And therefore we ask ourselves:
 <br/>
 **How did the perception of Brexit evolve over time after the referundum?** 
 <br/>
