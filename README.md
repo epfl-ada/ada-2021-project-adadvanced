@@ -76,7 +76,7 @@ Regarding dynamic graphs, those ones were deployed through the [Heroku](https://
     - Gaelle: Data exploration and Sanity check, Data augmentation, Data merging and cleaning, writing the readme file.
     
 - Milestone 3:
-    - Arnaud: data cleaning and wrangling, generation of plotly graphs as way as dash applications, deployment of these apps on Heroku.
+    - Arnaud: data cleaning and wrangling, generation of plotly graphs as way as dash applications, deployment of these apps on Heroku, stock market analysis.
     - Raffaele: data cleaning and analysis, generation of plotly graphs, speakers clustering task.
     - Gaelle: Website tuning and deployment, data story writing, embedding graphs into the website.
     - Jean: Website tuning and deployment, data story writing, embedding heroku applications into the website.
