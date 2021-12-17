@@ -39,10 +39,10 @@ Before diving into the analysis of the data, it is crucial to have a look at the
        - Computing [Cosine Similarity](https://en.wikipedia.org/wiki/Cosine_similarity) between each pair of quotations
        - Removing quotations that are too similar from the dataset
    - Removing quotations that do not have pertinent references (ambiguity regarding the speakers)
-   - thresholding to remove categories with low number of occurences (categories: nationality, party, academic_degree, religion and gender)
-   - manual grouping of different categories:
-      - for the academic degree grouping into 5 categories: Professor, Phd, Master, Bachelor and 		  others
-      - for religions grouping into 4 categories: Christianity, Hinduism, Islam, Judaism, Atheism
+   - Thresholding to remove categories with low number of occurences (categories: nationality, party, academic_degree, religion and gender)
+   - Manual grouping of different categories:
+      - For the academic degree grouping into 5 categories: Professor, Phd, Master, Bachelor and 		  others
+      - For religions grouping into 4 categories: Christianity, Hinduism, Islam, Judaism, Atheism
    - Aggregation of the data based on sectors, countries, gender and age categories
    - Identify time periods distributed on an almost uniform number of quotations
    - One hot-encoding of attributes
@@ -57,16 +57,16 @@ This spectral dimensionality reduction technique is non-linear, fast and reliabl
 2. Data Analysis:
 - Generate Results: statistics and general description of the data
 - Data visualisation:
-    - evolution of the way Brexit is perceived in the UK 
-    - evolution of the way Brexit is perceived in European countries
-    - evolution of the way Brexit is perceived in different sectors 
-    - perception of Brexit by age 
-    - perception of Brexit by gender <br/>
+    - Evolution of the way Brexit is perceived in the UK using pie charts to represent sentiment distribution across years.
+    - Evolution of the way Brexit is perceived in European countries using a color-encoded worldmap that reflects the position of the country towards Brexit.
+    - Evolution of the way Brexit is perceived in different sectors using dynamic pie charts (dash application) that represent sentiment distribution across years per sector.
+    - Perception of Brexit by age using dynamic histograms (dash application), for the world and UK.
+    - Perception of Brexit by gender using histograms. <br/>
 
-Except for the analysis of the european country, we assessed the differences between each category pairs (for instance art and health for the sectors) by comparing the means using a Welch's t-test. 
+Except for the analysis of the european country, we assessed the differences between pairs (for instance art and health for the sectors) by comparing the means of the sentiment distribution using a Welch's t-test. 
 
-Regarding dynamic graphs, those ones were deployed through the [Heroku](https://www.heroku.com/home).
-- Influence of Brexit on the stock exchange: To measure the correlation between the emergence of new events related to Brexit and movements in the stock exchange, the absolute value of the derivate was computed, in addition to the derivate of the number of quotations, both with respect to time. The derivatives are then used to compute the Pearson's correlation coefficient. For further information please check the stock market section in the Jupyter notebook.
+Dynamic graph were deployed via the [Heroku](https://www.heroku.com/home) platform.
+- Influence of Brexit on the stock exchange: to measure the correlation between the emergence of new events related to Brexit and movements in the stock exchange, the absolute value of the derivate was computed, in addition to the derivate of the number of quotations, both with respect to time. The derivatives are then used to compute the Pearson's correlation coefficient. For further information please check the stock market section in the Jupyter notebook.
 - Clustering 
 
 ## Organization within the Team
@@ -79,9 +79,9 @@ Regarding dynamic graphs, those ones were deployed through the [Heroku](https://
 - Milestone 3:
     - Arnaud: data cleaning and wrangling, generation of plotly graphs as way as dash applications, deployment of these apps on Heroku, stock market analysis.
     - Raffaele: data cleaning and analysis, generation of plotly graphs, speakers clustering task.
-    - Gaelle: Website tuning and deployment, data story writing, embedding graphs into the website.
-    - Jean: Website tuning and deployment, data story writing, embedding heroku applications into the website.
+    - Gaelle: Website tuning and deployement, data story writing, embedding graphs into the website.
+    - Jean: Website tuning and deployement, data story writing, embedding heroku applications into the website.
 
 ## Here is the final story ;)
 
-[Final story link](https://jeannafta.github.io/brexit_story/#Limitations)
+[Final story link](https://jeannafta.github.io/brexit_story)
