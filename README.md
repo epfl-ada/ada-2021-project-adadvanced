@@ -14,14 +14,11 @@ Main Question:
 <br/>
 Supporting Questions:
 <br/>
-- Which sectors had the most negative take on Brexit?
-- Which sectors had a significant change in perception (from negative to positive or vise versa) throughout the years?
-- Is it true that older people were more in favor of Brexit than younger people?
+- Did the UK's view on Brexit switch much from 2016 until its exit in 2020? When did the turnarounds of perception happen?
 - Which countries were the most supportive of the exit decision and which ones opposed it? What was the perception of European countries with regards to Brexit?
-- Which ethnicities were the most supportive of the exit decisions and which ones opposed it?
-- Does gender have an impact on the perception of Brexit?
-- Did the UK's view on Brexit switch much from 2015 until its exit in 2020? When did the turnarounds of perception happen?
-- Did Brexit discussions influence the british stock market? 
+- Which sectors had the most negative take on Brexit? Which sectors had a significant change in perception (from negative to positive or vise versa) throughout the years?
+- Is it true that older people were more in favor of Brexit than younger people?
+- Did Brexit discussions influence the british stock market?
 
 ## Proposed additional datasets 
 To enrich the quotebank data, we used additional information about the speakers that was provided by the `speaker_attributes.parquet` file. The source of the information is Wikidata. To complement the Quotebank data set, a sentiment analysis has been performed so to label the sentiment carried by the quote. Another dataset of interest is the FTSE100. This data set is accessible using the package [YFinance](https://pypi.org/project/yfinance/) and it gives the daily evolution of the stock actions throughout the years. 
@@ -40,9 +37,12 @@ Before diving into the analysis of the data, it is crucial to have a look at the
        - Converting quotations into vectors using [SentenceTransformer](https://www.sbert.net/docs/usage/semantic_textual_similarity.html) deep neural network.
        - Computing [Cosine Similarity](https://en.wikipedia.org/wiki/Cosine_similarity) between each pair of quotations
        - Removing quotations that are too similar from the dataset
-   - Removing quotations that do not have pertinent references
+   - Removing quotations that do not have pertinent references (ambiguity regarding the speakers)
+   - thresholding to remove categories with low number of occurences (categories: nationality, party, academic_degree, religion and gender)
+   - manual grouping of different categories:
+      - for the academic degree grouping into 5 categories: Professor, Phd, Master, Bachelor and 		  others
+      - for religions grouping into 4 categories: Christianity, Hinduism, Islam, Judaism, Atheism
    - Aggregation of the data based on sectors, countries, gender and age categories
-   - Merging similar speakers
    - Identify time periods distributed on an almost uniform number of quotations
    - One hot-encoding of attributes
  - Quotations and speakers clustering :
@@ -55,7 +55,18 @@ This spectral dimensionality reduction technique is non-linear, fast and reliabl
 
 2. Data Analysis:
 - Generate Results: statistics and general description of the data
-- Data Visualization using maps, histograms, scatter plots, interactive time map and plots.
+- Data visualisation:
+    - evolution of the way Brexit is perceived in the UK 
+    -
+ + evolution of the way Brexit is perceived in European countries
+ + evolution of the way Brexit is perceived in different sectors 
+ + perception of Brexit by age 
+ + perception of Brexit by gender 
+ Pour tous les plots sauf celui des European countries, on évalue les différences entre chaque catégorie en comparant les moyennes associées à ces dernières par le biais d'un Welch t-test.  
+ Concernant les plots intéractifs, ces derniers ont été déployés via la plateforme Heroku. 
+ + influence of Brexit on the stock exchange
+ To measure the correlation between the emergence of new events related to Brexit and movements in the stock exchange, the absolute value of the derivate was computed, in addition to the derivate of the number of quotations, both with respect to time. The derivatives are then used to compute the Pearson's correlation coefficient. For further information please check the stock market section in the Jupyter notebook.
+ + clustering 
 
 ## Timeline
 By the end of Milestone 2:
